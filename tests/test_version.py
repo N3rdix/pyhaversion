@@ -24,7 +24,7 @@ async def test_timeout_exception():
 
     with patch("pyhaversion.local.HaVersionLocal.fetch", mocked_fetch_TimeoutError):
         haversion = HaVersion()
-        with pytest.raises(HaVersionFetchException):
+        with pytest.raises(HaVersionTimeoutException):
             await haversion.get_version()
 
 
