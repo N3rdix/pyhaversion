@@ -89,7 +89,7 @@ class HaVersion:
             await self._handler.fetch(etag=etag)
 
         except asyncio.TimeoutError as exception:
-            raise HaVersionFetchException(
+            raise HaVersionTimeoutException(
                 f"Timeout of {self._handler.timeout} seconds was "
                 f"reached while fetching version for {self.source}"
             ) from exception
