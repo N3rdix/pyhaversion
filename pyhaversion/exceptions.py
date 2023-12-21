@@ -14,7 +14,11 @@ class HaVersionFetchException(HaVersionException):
 
 
 class HaVersionNotModifiedException(HaVersionFetchException):
-    """Raised when the cotent is not modified."""
+    """Raised when the content is not modified."""
+
+
+class HaVersionTimeoutException(HaVersionFetchException):
+    """Raised when the content fetching timed out."""
 
 
 class HaVersionParseException(HaVersionException):
