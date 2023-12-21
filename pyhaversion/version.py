@@ -17,7 +17,11 @@ from .consts import (
     HaVersionSource,
 )
 from .container import HaVersionContainer
-from .exceptions import HaVersionFetchException, HaVersionTimeoutException, HaVersionParseException
+from .exceptions import (
+    HaVersionFetchException,
+    HaVersionParseException,
+    HaVersionTimeoutException,
+)
 from .haio import HaVersionHaio
 from .local import HaVersionLocal
 from .pypi import HaVersionPypi

@@ -11,6 +11,7 @@ from pyhaversion import (
     HaVersionFetchException,
     HaVersionNotModifiedException,
     HaVersionParseException,
+    HaVersionTimeoutException,
 )
 
 

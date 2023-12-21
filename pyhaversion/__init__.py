@@ -6,6 +6,7 @@ from .exceptions import (
     HaVersionInputException,
     HaVersionNotModifiedException,
     HaVersionParseException,
+    HaVersionTimeoutException,
 )
 from .version import HaVersion
 
